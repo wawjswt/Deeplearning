@@ -1,0 +1,26 @@
+import torch
+# view/reshape
+a=torch.rand(4,1,28,28)
+print('a', a.shape)
+a1=a.view(4,28*28)
+print('a1',a1.shape)
+a2=a.view(4*28,28)
+print('a2',a2.shape)
+a3=a.view(4,28,28)
+print('a3',a3.shape)
+
+print('\nexpand函数')
+b=torch.rand(4,32,14,14)
+print('b', b.shape)
+b1=torch.rand(1,32,1,1)
+print('b1',b1.shape)
+b1=b1.expand(4,32,14,14)
+print('b1',b1.shape)
+b2=b1.expand(-1,32,-1,-1)
+print('b2',b2.shape)
+
+print('\nrepeat函数')
+c=torch.rand(1,32,1,1)
+print('c', c.shape)
+c1=c.repeat(4,1,14,14)
+print('c1',c1.shape)
