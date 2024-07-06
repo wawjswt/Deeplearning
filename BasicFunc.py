@@ -61,3 +61,4 @@ if torch.cuda.is_available():
 
 if __name__ == "__main__":
     print("Starting")
+    # 测试
