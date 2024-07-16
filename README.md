@@ -1,13 +1,13 @@
 # Deeplearning
 
-#### 介绍
+### 介绍
 深度学习笔记
 
-#### 软件架构
+### 软件架构
 软件架构说明
 
 
-#### 特技
+### 特技
 
 1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
 2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
