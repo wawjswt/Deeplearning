@@ -2,7 +2,6 @@
 # 在Python中常用的数据分析工具中，我们通常使用pandas软件包。
 import pandas as pd
 import os
-import os
 
 os.makedirs(os.path.join('..', 'data'), exist_ok=True)
 data_file = os.path.join('..', 'data', 'house_tiny.csv')  # data_file='../data/house_tiny.csv'
@@ -12,3 +11,7 @@ with open(data_file, 'w') as f:
     f.write('2,NA,106000\n')
     f.write('4,NA,178100\n')
     f.write('NA,NA,140000\n')
+
+if __name__=='__main__':
+    data=pd.read_csv(data_file)
+    print(data)
