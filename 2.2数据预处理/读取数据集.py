@@ -22,3 +22,5 @@ if __name__ == '__main__':
 
     inputs.iloc[:,0] = inputs.fillna(inputs.iloc[:,0].mean())  # fillna函数用于补充缺失值, 把数据行的缺省项换成数据行的平均值
     print(inputs, '\n\n\n', outputs)
+    inputs = pd.get_dummies(inputs, dummy_na=True)
+    print(inputs)
