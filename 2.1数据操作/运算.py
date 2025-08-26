@@ -12,3 +12,14 @@ print(f'x-y={x - y}')
 print(f'x*y={x * y}')
 print(f'x/y={x / y}')
 print(f'x**y={x ** y}')
+
+# exp()函数求幂指数，e为底数，括号内为指数
+print(f'e^x={torch.exp(x)}')
+
+# 张量的链接concatenate
+print(f'行方向连接：{torch.cat((x, y), dim=0)}')
+print(f'列方向连接：{torch.cat((x, y), dim=1)}')
+# print(f'通道方向连接：{torch.cat((x,y),dim=2)}')
+
+# 对张量中的所有元素进行求和，会产生一个单元素张量
+print(f'x元素和：{x.sum()}')
