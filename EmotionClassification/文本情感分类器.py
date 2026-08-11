@@ -20,8 +20,8 @@ import torch
 import torch.nn as nn
 import numpy as np
 import pandas as pd
-import jieba #结巴分词包
-import re #正则表达式的包
+import jieba   # 结巴分词包
+import re   # 正则表达式的包
 from collections import Counter #搜集器，可以让统计词频更简单
 
 #数据文件
@@ -35,7 +35,7 @@ def filter_punc(sentence):
 
 # 接下来扫描文本，建立词袋分辨好评和差评词汇
 def Prepare_data(good_file, bad_file, is_filter=True):
-    all_words = []  # collect alll the words
+    all_words = []  # collect all the words
     pos_sentences = []  # positive
     neg_sentences = []  # negative
     with open(good_file, 'r', encoding='utf-8') as f:
